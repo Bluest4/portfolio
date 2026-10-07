@@ -1,0 +1,17 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Blue and green aurora</title>
+  <defs>
+    <linearGradient id="aurora" x1="9" y1="40" x2="55" y2="24" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0f9af7"/>
+      <stop offset=".5" stop-color="#33dbc0"/>
+      <stop offset="1" stop-color="#02fa1f"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-100%" width="200%" height="300%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#15181f"/>
+  <path d="M9 41C18 42 18 23 29 24S39 44 55 22" stroke="url(#aurora)" stroke-width="10" stroke-linecap="round" opacity=".65" filter="url(#glow)"/>
+  <path d="M9 41C18 42 18 23 29 24S39 44 55 22" stroke="url(#aurora)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M10 48C22 48 22 33 32 34S44 45 54 33" stroke="url(#aurora)" stroke-width="2" stroke-linecap="round" opacity=".55"/>
+</svg>
