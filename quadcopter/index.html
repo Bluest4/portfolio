@@ -4,12 +4,16 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-X1XD92QFHP"></script>
     <script>
+      // Only the public website may send events to the live property.
+      window['ga-disable-G-X1XD92QFHP'] = !['baslan.dev', 'www.baslan.dev'].includes(window.location.hostname);
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-X1XD92QFHP');
+      if (!window['ga-disable-G-X1XD92QFHP']) {
+        gtag('js', new Date());
+        gtag('config', 'G-X1XD92QFHP');
+      }
     </script>
+    <!-- End Google tag -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
     
@@ -24,7 +28,7 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=aurora" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script type="module" crossorigin src="/assets/index-VNnh82E4.js"></script>
+    <script type="module" crossorigin src="/assets/index-CFmu6nJw.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-DyTiZbFl.css">
       
     
@@ -57,14 +61,14 @@
     <meta property="og:title" content="Quadcopter" />
     <meta property="og:description" content="Explore this project." />
     <meta property="og:url" content="https://baslan.dev/quadcopter/" />
-    <meta property="og:image" content="https://baslan.dev/social/quadcopter.gif" />
-    <meta property="og:image:secure_url" content="https://baslan.dev/social/quadcopter.gif" />
+    <meta property="og:image" content="https://baslan.dev/social/quadcopter.gif?v=7dad522d0b00" />
+    <meta property="og:image:secure_url" content="https://baslan.dev/social/quadcopter.gif?v=7dad522d0b00" />
     <meta property="og:image:type" content="image/gif" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="627" />
+    <meta property="og:image:width" content="720" />
+    <meta property="og:image:height" content="376" />
     <meta property="og:image:alt" content="The rotating quadcopter CAD assembly from the portfolio project card." />
-    <meta property="og:image" content="https://baslan.dev/social/quadcopter.png" />
-    <meta property="og:image:secure_url" content="https://baslan.dev/social/quadcopter.png" />
+    <meta property="og:image" content="https://baslan.dev/social/quadcopter.png?v=7dad522d0b00" />
+    <meta property="og:image:secure_url" content="https://baslan.dev/social/quadcopter.png?v=7dad522d0b00" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="627" />
@@ -72,7 +76,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Quadcopter" />
     <meta name="twitter:description" content="Explore this project." />
-    <meta name="twitter:image" content="https://baslan.dev/social/quadcopter.png" />
+    <meta name="twitter:image" content="https://baslan.dev/social/quadcopter.png?v=7dad522d0b00" />
     <meta name="twitter:image:alt" content="The rotating quadcopter CAD assembly from the portfolio project card." />
   </head>
   <body>
